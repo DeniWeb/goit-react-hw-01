@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 525px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profile_people {
+  padding: 20px;
+}
+
+.profile_avatar {
+  width: 200px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.profile_name {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.profile_tag {
+  color: rgb(152, 152, 152);
+}
+
+.profile_location {
+  color: rgb(155, 155, 155);
+}
+
+/* Stats */
+
+.profile_stats {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(212, 212, 212);
+}
+
+.profile_stats_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  border-top: 2px solid grey;
+  padding: 20px 0;
+}
+
+.profile_stats_content:not(:first-child) {
+  border-left: 2px solid grey;
+}
+
+.profile_stats_numbers {
+  font-weight: 600;
+}
