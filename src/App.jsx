@@ -1,9 +1,13 @@
-import './App.css';
-import FriendList from './components/FriendList/FriendList';
 import Profile from './components/Profile/Profile';
-import userData from './components/userData.json';
+import userData from './userData.json';
 
-export default function App() {
+import FriendList from './components/FriendList/FriendList';
+import friends from './friends.json';
+
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './transactions.json';
+
+const App = () => {
   return (
     <>
       <Profile
@@ -12,8 +16,11 @@ export default function App() {
         location={userData.location}
         image={userData.avatar}
         stats={userData.stats}
-      ></Profile>
-      <FriendList></FriendList>
+      />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
-}
+};
+
+export default App;

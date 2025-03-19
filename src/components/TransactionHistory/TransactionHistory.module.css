@@ -1,0 +1,36 @@
+.transaction_container {
+  width: 925px;
+  border: 1px solid black;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.transaction_header {
+  background-color: rgb(35, 35, 35);
+  color: #fff;
+  font-size: 22px;
+}
+
+.transaction_header_title,
+.transaction_body_text {
+  padding: 10px 125px;
+  border: 1px solid black;
+}
+
+.transaction_body_text {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
+  /* padding-left: 125px; */
+}
+
+tr:nth-child(even) {
+  background-color: #dbdbdb;
+}
+
+tbody td:nth-child(n + 2) {
+  text-align: center;
+}
