@@ -1,6 +1,6 @@
 import css from './Profile.module.css';
 
-export default function Profile({ name, tag, location, image, stats }) {
+const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <div className={css.profile}>
       <div className={css.profile_people}>
@@ -26,4 +26,6 @@ export default function Profile({ name, tag, location, image, stats }) {
       </ul>
     </div>
   );
-}
+};
+
+export default Profile;
